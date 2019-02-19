@@ -1,0 +1,21 @@
+{
+
+  "manifest_version": 2,
+  "name": "FFDiff",
+  "version": "0.1",
+
+  "description": "Pretty-print Git patch/diff files.",
+
+  "icons": {
+    "256": "icons/git-256.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*/*.patch"],
+      "js": ["lib/diff2html.js", "ffdiff.js"],
+      "css": ["lib/diff2html.css"]
+    }
+  ]
+
+}
