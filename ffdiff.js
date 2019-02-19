@@ -6,7 +6,7 @@ result.textContent = "loading..."
 document.body.appendChild(result)
 
 var diffHtml = Diff2Html.getPrettyHtml(rawDiff,
-  {inputFormat: 'diff', showFiles: true, matching: 'lines', outputFormat: 'side-by-side'}
+  {inputFormat: 'diff', showFiles: true, outputFormat: 'line-by-line'}
 );
 
 result.innerHTML = diffHtml;
